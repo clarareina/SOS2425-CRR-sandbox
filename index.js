@@ -6,7 +6,7 @@ const express = require("express"); //carga el modulo que hemos intalado en una 
 
 const app = express();
 
-const PORT = 16078;
+const PORT = process.env.PORT || 16078;
 
 app.use("/", express.static("./public")); 
 
