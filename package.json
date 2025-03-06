@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "cool-ascii-faces": "^1.3.4",
+    "express": "^4.21.2"
+  },
+  "name": "sos2425-crr-sandbox",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clarareina/SOS2425-CRR-sandbox.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clarareina/SOS2425-CRR-sandbox/issues"
+  },
+  "homepage": "https://github.com/clarareina/SOS2425-CRR-sandbox#readme"
+}
