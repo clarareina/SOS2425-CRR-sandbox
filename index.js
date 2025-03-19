@@ -35,12 +35,16 @@ app.post(BASE_API+"/contacts", (request, response) => {
 }); 
 
 app.put(BASE_API + "/contacts/:phone", (request, response) => {
-        const phone = request.params.phone;
+        let phone = request.params.phone;
         console.log(`New PUT to /contacts/${phone}`);
     
-        const search = contacts.filter(x => x.phone === phone);
+        const search = contacts.filter(x => x.phone == phone);
+
         if (search.length > 0){
+            console.log("Datos actuales encontrados:", search);
             let data = request.body;
+            post.findOneAndUpdate(phone, data, {new: true});
+
             if (!data.name || !data.phone) {
                 response.status(400).json({message : "Faltan datos requeridos"});
             }
